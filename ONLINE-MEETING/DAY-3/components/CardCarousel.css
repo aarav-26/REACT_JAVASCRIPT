@@ -1,0 +1,42 @@
+.card-carousel-container {
+  margin-top:100px;
+  overflow: hidden;
+
+}
+
+.card-carousel {
+  display: flex;
+  animation: scrollAnimation 60s linear infinite;
+  
+}
+
+@keyframes scrollAnimation {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  150% {
+    transform: translateX(-200%);
+  }
+}
+
+.card {
+ 
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden; 
+  width: 300px;
+  border-radius: 10px;
+  padding: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow:2px 2px 5px 5px black;
+}
+.card img {
+  
+  width: 100%;
+  height: auto; 
+}
+
